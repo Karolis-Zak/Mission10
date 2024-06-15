@@ -69,3 +69,5 @@ Ensure you have the following installed on your system:
 - **Tailwind CSS**: Utility-first CSS framework for styling.
 - **JavaScript**: Programming language for adding interactivity.
 - **Node.js**: JavaScript runtime environment for building and running the project.
+
+  ![image](https://github.com/Karolis-Zak/Mission10/assets/114151300/0f4f51ee-c9d8-4410-9c83-01b1bea6cd0b)
