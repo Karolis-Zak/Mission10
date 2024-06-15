@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function () {
-      // Toggle the clicked section
+      // Change the clicked section
       this.classList.toggle("active");
       var content = this.nextElementSibling;
       if (content.style.maxHeight) {
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         content.style.maxHeight = content.scrollHeight + "px";
       }
 
-      // Change the image based on the section
+      // Change the image based on the section open
       sectionImage.src = images[i];
 
       // Close other sections
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   contents[0].style.maxHeight = contents[0].scrollHeight + "px";
   sectionImage.src = images[0];
 
-  // JavaScript to handle link clicks
+  //  Effect when clicked 'learn more'
   document.querySelectorAll(".learnMore").forEach(function (element) {
     element.addEventListener("click", function () {
       alert("Waaw, you just learned more!");
@@ -47,7 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// JavaScript to handle button click
+
+// Button to change buttons text 
 document.getElementById("myButton").addEventListener("click", function () {
   this.textContent = "You clicked me!";
 });

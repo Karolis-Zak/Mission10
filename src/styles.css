@@ -44,11 +44,11 @@ h2 {
   text-align: left;
   outline: none;
   font-size: 15px bold;
-  border-bottom: none; /* Avoid double border with content */
+  border-bottom: none; 
   position: relative;
   border-right-style: none;
   border-left-style: none;
-  margin-bottom: 10px; /* Add margin bottom to create space */
+  margin-bottom: 10px; 
 }
 .active,
 .collapsible:hover {
@@ -77,10 +77,10 @@ h2 {
   transition: max-height 0.2s ease-out;
   background-color: rgb(230, 211, 157);
   border: 3px black double;
-  border-top: none; /* Ensures the top border is only on the button */
+  border-top: none; 
   border-right-style: none;
   border-left-style: none;
-  margin-bottom: 20px; /* Add margin bottom to create space */
+  margin-bottom: 20px; 
 }
 
 /* Photo Gallery ------------------------------------------------------*/
@@ -88,22 +88,22 @@ img {
   position: absolute;
   margin-left: 35%;
   border: solid black;
-  width: 60%; /* Adjust width as needed */
-  max-width: 800px; /* Limit maximum width */
-  max-height: 1100px; /* Limit maximum height */
-  display: block; /* Ensure image is treated as a block element */
-  object-fit: cover; /* Ensure the image covers the entire container */
+  width: 60%; 
+  max-width: 800px; 
+  max-height: 1100px; 
+  display: block; 
+  object-fit: cover;
   border-radius: 8px;
-  margin-top: 1%; /* Adjust top margin to fine-tune positioning */
+  margin-top: 1%; 
 }
 
 @media (min-width: 767px) {
   img {
-    width: 40%; /* Adjust width for larger screens */
+    width: 40%; 
   }
 }
 
-/* button -------------- */
+/* button ------------------------ */
 
 #myButton {
   padding: 10px 20px;
@@ -113,10 +113,10 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  position: absolute; /* Position absolutely */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for exact centering */
-  top: 90%; /* Adjust top position */
+  position: absolute; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  top: 90%; 
 }
 
 #myButton:hover {
