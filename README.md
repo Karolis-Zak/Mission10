@@ -52,7 +52,7 @@ Ensure you have the following installed on your system:
 
 ## Usage
 
-1. Open the `index.html` file in your browser to view the project.
+1. Open `public` folder then the `index.html` file in your browser to view the project.
 
 2. Interact with the collapsible sections to view dynamic content changes.
 
