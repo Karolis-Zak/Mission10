@@ -1,54 +1,71 @@
-<a href="https://craftcms.com/" rel="noopener" target="_blank"><img width="247" height="60" src="https://craftcms.com/craftcms.svg" alt="Craft CMS"></a>
+# Elecsys Benefits
 
-<br>
+## Overview
 
-[Craft](https://craftcms.com/) is a flexible, user-friendly CMS for creating custom digital experiences on the web and beyond.
+Elecsys is a cloud-based multi-modular software platform designed to empower owners and operators of electricity networks to manage their network in a safe and effective manner. This project demonstrates the various features and benefits of the Elecsys platform through an interactive web interface.
 
-In technical terms, it’s a self-hosted PHP application backed by a MySQL or Postgres database. Read more in the [official documentation](https://craftcms.com/docs).
 
-__Psst!__ Looking for the Craft source code? Need to file a bug report or feature request? Check out [`craftcms/cms`](https://github.com/craftcms/cms).
+## Features
 
----
-
-:postal_horn: **If you just heard about Craft:** Take a feature tour on [our website](https://craftcms.com/features)—then spin up a [demo project](https://craftcms.com/demo) to try it out for yourself.
-
-:construction_worker_woman: **If you are eager to start building:** You’re in exactly the right place!
+- **Collapsible Sections**: Interactive collapsible sections to display information.
+- **Dynamic Content**: Changeable images based on the selected section.
+- **Responsive Design**: Ensures compatibility with different screen sizes.
+- **Interactive Buttons**: Learn more buttons with pop-up messages.
 
 ## Getting Started
 
-This repository is a bare-bones [Composer](https://getcomposer.org/) “project”, intended for use with the `composer create-project` command. It contains only the folders and files absolutely required to run Craft.
+These instructions will help you set up the project on your local machine for development and testing purposes.
 
-> [!TIP]  
-> Our [tutorial](https://craftcms.com/docs/getting-started-tutorial/) covers this setup process in greater depth. If you get stuck, give it a once-over; if things still aren’t clicking, help is never far away in [our community](https://craftcms.com/community) or via [official support](https://craftcms.com/support-services).
->
-> You can also find these instructions (and some other helpful tips) in [the documentation](https://craftcms.com/docs/5.x/install.html).
+### Prerequisites
 
-The best way to spin up your first project is with [DDEV](https://ddev.com/), a cross-platform, Docker-based PHP development environment.
+Ensure you have the following installed on your system:
 
-1. [Install DDEV](https://ddev.readthedocs.io/en/stable/users/install/ddev-installation/)
-2. Choose a folder for your project and move into it:
+- [Node.js](https://nodejs.org/en/) (includes npm)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Composer](https://getcomposer.org/) (if using PHP-based backend)
+
+### Installation
+
+1. Clone the repository:
+
     ```bash
-    cd /path/to/web/projects
-    mkdir my-project
-    cd my-project
+    git clone https://github.com/yourusername/elecsys-benefits.git
     ```
-3. Configure a new DDEV [project](https://ddev.readthedocs.io/en/latest/users/quickstart/#craft-cms), and install Craft:
+
+2. Navigate to the project directory:
+
     ```bash
-    ddev config --project-type=craftcms --docroot=web --create-docroot --php-version=8.2
-
-    # Use this package as a starting point:
-    ddev composer create -y --no-scripts craftcms/craft=^5.0.0
-
-    # Run the Craft CMS installer (use all defaults):
-    ddev craft install
+    cd elecsys-benefits
     ```
-4. Run `ddev launch` to open the project in your browser.
 
-Craft’s [control panel](https://craftcms.com/docs/5.x/system/control-panel.html) is located at `/admin`. The rest is up to you! Pick up where we left off in [the tutorial](https://craftcms.com/docs/getting-started-tutorial/install/control-panel.html), or dive right in on modeling your own content:
-- :card_file_box: [Elements](https://craftcms.com/docs/5.x/system/elements.html): Learn about Craft’s core content types, and how to customize them.
-- :triangular_ruler: [Fields](https://craftcms.com/docs/5.x/system/fields.html): Create precisely the data structure and authoring experience you need.
-- :pencil2: [Templating](https://craftcms.com/docs/5.x/development/twig.html): Start using your data in a totally custom front-end.
+3. Install dependencies:
 
-## Resources
+    ```bash
+    npm install
+    ```
 
-Craft comes with a ton of official and community [resources](https://github.com/craftcms/cms#resources). 
+4. Build Tailwind CSS:
+
+    ```bash
+    npx tailwindcss build src/styles.css -o dist/styles.css
+    ```
+
+## Usage
+
+1. Open the `index.html` file in your browser to view the project.
+
+2. Interact with the collapsible sections to view dynamic content changes.
+
+3. Click the "Learn more ->" text to see the pop-up message.
+
+### Scripts
+
+- `npm run build`: Compiles the Tailwind CSS styles.
+
+## Technologies Used
+
+- **HTML**: Markup language for creating the structure of the web pages.
+- **CSS**: Styling the HTML content.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **JavaScript**: Programming language for adding interactivity.
+- **Node.js**: JavaScript runtime environment for building and running the project.
